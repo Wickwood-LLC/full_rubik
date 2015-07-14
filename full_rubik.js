@@ -39,6 +39,7 @@
 		        }
 		    }
 		}
+		$(document).ready(checkCookie);
     }
   };
 }(jQuery));
