@@ -45,14 +45,17 @@
         $('#block-block-2').hide();
         dontShow = true;
         localStorage.setItem("dontShow", dontShow);
+        console.log(dontShow);
       });
       function checkShow() {
       	dontShow = localStorage.getItem("dontShow");
+      	console.log(dontShow);
       	if (dontShow = true) {
       		$('#block-block-2').hide();
       	}
       }
       $(document).ready(checkShow);
+      console.log(dontShow);
     }
   };
 }(jQuery));
