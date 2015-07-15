@@ -30,16 +30,29 @@
 
 		// function checkCookie() {
 		//     var user = getCookie("username");
-		//     if (user != "") {
-		//         alert("Welcome again " + user);
-		//     } else {
-		//         user = prompt("Please enter your name:", "");
-		//         if (user != "" && user != null) {
-		//             setCookie("username", user, 365);
-		//         }
-		//     }
+	 //        if (user != "" && user != null) {
+	 //            setCookie("username", user, 365);
+	 //        }
 		// }
 		// $(document).ready(checkCookie);
   //   }
   // };
+
+  Drupal.behaviors.secureSite = {
+    attach: function (context, settings) {
+    var dontShow = localStorage.getItem("dontShow");
+	  $('.close').click(function() {
+        $('#block-block-2').hide();
+        dontShow = true;
+        localStorage.setItem("dontShow", dontShow);
+      });
+      function checkShow() {
+      	dontShow = localStorage.getItem("dontShow");
+      	if (dontShow = true) {
+      		$('#block-block-2').hide();
+      	}
+      }
+      $(document).ready(checkShow);
+    }
+  };
 }(jQuery));
