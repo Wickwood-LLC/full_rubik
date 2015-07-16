@@ -35,61 +35,59 @@ body:not(.page-admin) .block {
     float: left;
     border: 0; }
 
-@media (min-width: 980px) {
-  #block-tb-megamenu-main-menu .block-content {
-    padding: 0; }
+#block-tb-megamenu-main-menu .block-content {
+  padding: 0; }
 
-  #block-tb-megamenu-main-menu #tb-megamenu-main-menu {
-    background: transparent;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-flex-flow: row wrap;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap; }
-    #block-tb-megamenu-main-menu #tb-megamenu-main-menu .nav-collapse {
-      position: relative;
-      top: 0;
-      display: table; } }
-    @media (min-width: 980px) and (min-width: 980px) {
+#block-tb-megamenu-main-menu #tb-megamenu-main-menu {
+  background: transparent;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; }
+  #block-tb-megamenu-main-menu #tb-megamenu-main-menu .nav-collapse {
+    position: relative;
+    top: 0;
+    display: table; }
+    @media (min-width: 980px) {
       #block-tb-megamenu-main-menu #tb-megamenu-main-menu .nav-collapse {
         display: block; } }
-@media (min-width: 980px) {
-    #block-tb-megamenu-main-menu #tb-megamenu-main-menu .dropdown-menu {
-      background-color: #f8f8f8; }
-    #block-tb-megamenu-main-menu #tb-megamenu-main-menu .tb-megamenu-nav > li {
-      background: #eee url(images/bleeds.png) 50% 0px no-repeat;
-      border: 0px;
-      float: none; } }
-    @media (min-width: 980px) and (min-width: 980px) {
+  #block-tb-megamenu-main-menu #tb-megamenu-main-menu .dropdown-menu {
+    background-color: #f8f8f8; }
+  #block-tb-megamenu-main-menu #tb-megamenu-main-menu .tb-megamenu-nav > li {
+    background: #eee url(images/bleeds.png) 50% 0px no-repeat;
+    border: 0px;
+    float: none; }
+    @media (min-width: 980px) {
       #block-tb-megamenu-main-menu #tb-megamenu-main-menu .tb-megamenu-nav > li {
         float: left; } }
-@media (min-width: 980px) {
-      #block-tb-megamenu-main-menu #tb-megamenu-main-menu .tb-megamenu-nav > li.active, #block-tb-megamenu-main-menu #tb-megamenu-main-menu .tb-megamenu-nav > li.active > a {
-        background-color: #7bc !important;
-        color: #fff;
-        text-shadow: #38a 0px 1px 0px; }
-      #block-tb-megamenu-main-menu #tb-megamenu-main-menu .tb-megamenu-nav > li:first-child, #block-tb-megamenu-main-menu #tb-megamenu-main-menu .tb-megamenu-nav > li:first-child a {
-        border-radius: 5px 0px 0px 5px; }
-      #block-tb-megamenu-main-menu #tb-megamenu-main-menu .tb-megamenu-nav > li:last-child, #block-tb-megamenu-main-menu #tb-megamenu-main-menu .tb-megamenu-nav > li:last-child a {
-        border-radius: 0px 5px 5px 0px; }
-      #block-tb-megamenu-main-menu #tb-megamenu-main-menu .tb-megamenu-nav > li.open a {
+    #block-tb-megamenu-main-menu #tb-megamenu-main-menu .tb-megamenu-nav > li.active, #block-tb-megamenu-main-menu #tb-megamenu-main-menu .tb-megamenu-nav > li.active > a {
+      background-color: #7bc !important;
+      color: #fff;
+      text-shadow: #38a 0px 1px 0px; }
+    #block-tb-megamenu-main-menu #tb-megamenu-main-menu .tb-megamenu-nav > li:first-child, #block-tb-megamenu-main-menu #tb-megamenu-main-menu .tb-megamenu-nav > li:first-child a {
+      border-radius: 5px 0px 0px 5px; }
+    #block-tb-megamenu-main-menu #tb-megamenu-main-menu .tb-megamenu-nav > li:last-child, #block-tb-megamenu-main-menu #tb-megamenu-main-menu .tb-megamenu-nav > li:last-child a {
+      border-radius: 0px 5px 5px 0px; }
+    #block-tb-megamenu-main-menu #tb-megamenu-main-menu .tb-megamenu-nav > li.open a {
+      background-color: #f8f8f8; }
+    #block-tb-megamenu-main-menu #tb-megamenu-main-menu .tb-megamenu-nav > li a {
+      background-image: none;
+      color: #333;
+      text-shadow: #fff 0px 1px 0px;
+      min-width: 70px;
+      text-align: center;
+      float: left;
+      padding: 5px 10px; }
+      #block-tb-megamenu-main-menu #tb-megamenu-main-menu .tb-megamenu-nav > li a:hover {
         background-color: #f8f8f8; }
-      #block-tb-megamenu-main-menu #tb-megamenu-main-menu .tb-megamenu-nav > li a {
-        background-image: none;
-        color: #333;
-        text-shadow: #fff 0px 1px 0px;
-        min-width: 70px;
-        text-align: center;
-        float: left;
-        padding: 5px 10px; }
-        #block-tb-megamenu-main-menu #tb-megamenu-main-menu .tb-megamenu-nav > li a:hover {
-          background-color: #f8f8f8; } }
+
 /* Maintenance page styles */
 body.maintenance-page {
   width: 100vw;
