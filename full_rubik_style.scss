@@ -62,17 +62,21 @@ body:not(.page-admin) .block {
 
   #tb-megamenu-main-menu {
     background: transparent;
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
+    display: table;
+    margin: 0 auto;
     
     .nav-collapse {
       position: relative;
       top: 0;
-      display: table;
       @include breakpoint(980px) {
         display: block;
       }
+    }
+
+    .btn-navbar {
+      display: table;
+      margin: 0 auto;
+      float: none;
     }
 
     .dropdown-menu {
@@ -96,11 +100,18 @@ body:not(.page-admin) .block {
       }
       &:first-child,
       &:first-child a {
-          border-radius: 5px 0px 0px 5px;
+          border-radius: 0;
+
+          @include breakpoint(980px) {
+            border-radius: 5px 0px 0px 5px;
+          }
       }
       &:last-child,
       &:last-child a {
-          border-radius: 0px 5px 5px 0px;
+          border-radius: 0;
+          @include breakpoint(980px) {
+            border-radius: 0px 5px 5px 0px;
+          }
       }
       &.open a {
         background-color: #f8f8f8;
@@ -112,8 +123,12 @@ body:not(.page-admin) .block {
         text-shadow: #fff 0px 1px 0px;
         min-width: 70px;
         text-align: center;
-        float: left;
+        float: none;
         padding: 5px 10px;
+
+        @include breakpoint(980px) {
+          float: left;
+        }
 
         &:hover {
           background-color: #f8f8f8;
