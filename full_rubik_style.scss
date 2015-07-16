@@ -64,91 +64,61 @@ body:not(.page-admin) .block {
   }
 }
 
-#block-superfish-1 {
-  #mobile-menu {
-  //   background-color: #7bc;
-  //   border: 0px;
-  //   border-radius: 5px;
-  //   color: #fff;
-  //   display: table;
-  //   font-size: large;
-  //   margin: 0 auto;
-  //   padding: 5px 10px;
-  //   text-shadow: #38a 0px 1px 0px;
-
-  //   @include breakpoint(1024px) {
-      display: none;
-  //   }
-  }
-
+#block-tb-megamenu-main-menu {
   .block-content {
     display: flex;
-    align-items: center;
+    justify-content: center;
   }
 
   #superfish-1-select {
     margin: 0 auto;
   }
 
-  #superfish-1 {
-    border-radius: 5px;
-    display: none;
-    margin: 0 auto;
+  #tb-megamenu-main-menu {
+    background: transparent;
 
-    @include breakpoint(1024px) {
-      display: table
+    .dropdown-menu {
+      background-color: #f8f8f8;
     }
 
-    >li {
+    .tb-megamenu-nav>li {
       background: #eee url(images/bleeds.png) 50% 0px no-repeat;
       display: flex;
-      // float: none;
       border: 0px;
-      padding: 5px 10px;
+      float: left;
 
-      // @include breakpoint(1024px) {
-        float: left;
-      // }
+      &.active,
+      &.active>a {
+        background-color: #7bc !important;
 
-      &:hover {
+        // a {
+          color: #fff;
+          text-shadow: #38a 0px 1px 0px;
+        // }
+      }
+      &:first-child,
+      &:first-child a {
+          border-radius: 5px 0px 0px 5px;
+      }
+      &:last-child,
+      &:last-child a {
+          border-radius: 0px 5px 5px 0px;
+      }
+      &.open a {
         background-color: #f8f8f8;
       }
-      &.active-trail {
-        background-color: #7bc;
-      }
-      &:first-child {
-        // border-radius: 5px 5px 0px 0px;
-        // @include breakpoint(1024px) {
-          border-radius: 5px 0px 0px 5px;
-        // }
-      }
-      &:last-child {
-        // border-radius: 0px 0px 5px 5px;
-        // @include breakpoint(1024px) {
-          border-radius: 0px 5px 5px 0px;
-        // }
-      }
-      // &.menuparent ul {
-      //   display: none !important;
-      //   @include breakpoint(1024px) {
-      //     display: initial !important;
-      //   }
-      // }
 
       a {
+        background-image: none;
         color: #333;
         text-shadow: #fff 0px 1px 0px;
         min-width: 70px;
         text-align: center;
-        float: none;
-        
-        @include breakpoint(1024px) {
-          float: left;
-        }
+        float: left;
+        padding: 5px 10px;
 
-        &.active {
-          color: #fff;
-          text-shadow: #38a 0px 1px 0px;
+        &:hover {
+          background-color: #f8f8f8;
         }
       }
     }
