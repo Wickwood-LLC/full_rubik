@@ -77,6 +77,10 @@ body:not(.page-admin) .block {
       display: table;
       margin: 0 auto;
       float: none;
+
+      @include breakpoint(980px) {
+        display: none;
+      }
     }
 
     .dropdown-menu {
