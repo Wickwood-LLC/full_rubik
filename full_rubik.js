@@ -1,36 +1,27 @@
 (function ($) {
-  Drupal.behaviors.responsiveMenu = {
-    attach: function (context, settings) {
-      $('#block-superfish-1 .block-content').before('<button id="mobile-menu"> ≡ Menu </button>');
-      $('#block-superfish-1 #mobile-menu', context).click(function(){
-        $('#block-superfish-1 #superfish-1').slideToggle("ease-in-out");
-      });
-    }
-  };
-
   Drupal.behaviors.secureSite = {
-    attach: function (context, settings) {
-      var dontShow = localStorage.getItem("dontShow"); // define variable
-
+    attach: function () {
       $('.close').click(function() {	// if button is clicked
         $('#block-block-2').hide();		// hide message
         dontShow = true;				// set our variable to true
         localStorage.setItem("dontShow", dontShow);	// and save to the client machine
-        console.log(dontShow);
+        // console.log(dontShow);
       });
 
-      function checkShow() {
-      	dontShow = localStorage.getItem("dontShow");	// read variable stored in local client, if there is already
-      	console.log(dontShow);
-      	if (dontShow = false) {
-      		$('#block-block-2').show();					// if value is false, we show the message.
+      	var dontShow = localStorage.getItem("dontShow"); // define variable, read from local storage if there is
+      	// console.log(dontShow);
+      	if (dontShow) {
+      		$('#block-block-2').hide();					// if value is false, we show the message.
+      		// console.log(dontShow);
+      	} else {
+      		$('#block-block-2').show();
+      		// console.log(dontShow);
       	}
-      }
 
 		dontShow = false;
 		localStorage.setItem("dontShow", dontShow);
-      $(document).ready(checkShow);
-      console.log(dontShow);
+      // $(document).ready(checkShow);
+      // console.log(dontShow);
     }
   };
 }(jQuery));
