@@ -5,6 +5,32 @@ body:not(.page-admin) .block {
   background: none;
   border: 0px; }
 
+#mini-panel-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  #mini-panel-header .panel-panel {
+    width: auto; }
+  #mini-panel-header .panel-col-first,
+  #mini-panel-header .panel-col-last {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 auto;
+        -ms-flex: 0 auto;
+            flex: 0 auto; }
+  #mini-panel-header .panel-col {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 auto;
+        -ms-flex: 1 auto;
+            flex: 1 auto;
+    text-align: center; }
+    #mini-panel-header .panel-col .pane-page-site-name {
+      font-size: 2em;
+      line-height: 1.5; }
+    #mini-panel-header .panel-col .pane-page-slogan {
+      font-size: 1.5em;
+      line-height: 1.5; }
+
 .secure-site-notif .block-content {
   background-color: #2ECC71;
   text-align: center;

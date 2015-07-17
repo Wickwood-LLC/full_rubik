@@ -8,6 +8,32 @@ body:not(.page-admin) .block {
   border: 0px;
 }
 
+#mini-panel-header {
+  display: flex;
+
+  .panel-panel {
+    width: auto;    
+  }
+
+  .panel-col-first,
+  .panel-col-last {
+    flex: 0 auto;
+  }
+  .panel-col {
+    flex: 1 auto;
+    text-align: center;
+
+    .pane-page-site-name {
+      font-size: 2em;
+      line-height: 1.5;
+    }
+    .pane-page-slogan {
+      font-size: 1.5em;
+      line-height: 1.5;
+    }
+  }
+}
+
 .secure-site-notif .block-content {
   background-color: #2ECC71;
   text-align: center;
