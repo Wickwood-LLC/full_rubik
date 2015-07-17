@@ -8,28 +8,29 @@
     }
   };
 
-  // Drupal.behaviors.secureSite = {
-  //   attach: function (context, settings) {
-  //   var dontShow = localStorage.getItem("dontShow");
-	 //  $('.close').click(function() {
-  //       $('#block-block-2').hide();
-  //       dontShow = true;
-  //       localStorage.setItem("dontShow", dontShow);
-  //       console.log(dontShow);
-  //     });
-  //     function checkShow() {
-  //     	dontShow = localStorage.getItem("dontShow");
-  //     	console.log(dontShow);
-  //     	if (dontShow = false) {
-  //     		$('#block-block-2').show();
-  //     	} else {
-  //     		$('#block-block-2').hide();
-  //     	}
-  //     }
-		// dontShow = false;
-		// localStorage.setItem("dontShow", dontShow);
-  //     $(document).ready(checkShow);
-  //     console.log(dontShow);
-  //   }
-  // };
+  Drupal.behaviors.secureSite = {
+    attach: function (context, settings) {
+      var dontShow = localStorage.getItem("dontShow"); // define variable
+
+      $('.close').click(function() {	// if button is clicked
+        $('#block-block-2').hide();		// hide message
+        dontShow = true;				// set our variable to true
+        localStorage.setItem("dontShow", dontShow);	// and save to the client machine
+        console.log(dontShow);
+      });
+
+      function checkShow() {
+      	dontShow = localStorage.getItem("dontShow");	// read variable stored in local client, if there is already
+      	console.log(dontShow);
+      	if (dontShow = false) {
+      		$('#block-block-2').show();					// if value is false, we show the message.
+      	}
+      }
+
+		dontShow = false;
+		localStorage.setItem("dontShow", dontShow);
+      $(document).ready(checkShow);
+      console.log(dontShow);
+    }
+  };
 }(jQuery));
