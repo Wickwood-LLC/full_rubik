@@ -11,7 +11,7 @@
       	var dontShow = localStorage.getItem("dontShow"); // define variable, read from local storage if there is
       	// console.log(dontShow);
       	if (dontShow) {
-      		$('#block-block-2').hide();					// if value is false, we show the message.
+      		$('#block-block-2').hide();					// if value is true, we hide the message.
       		// console.log(dontShow);
       	} else {
       		$('#block-block-2').show();
