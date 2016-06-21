@@ -9,4 +9,23 @@
 		  });
     }
   };
+
+  Drupal.behaviors.touchMenu = {
+    attach: function (context, settings) {
+      $('.nav > li.mega').click(function(event) {     
+      if (!$(this).hasClass('open-fix')) {
+       //MENU IS CLOSED
+           $("ul.tb-megamenu-nav li").removeClass("open-fix");
+           $("ul.tb-megamenu-nav li").removeClass("open");
+           $(this).addClass('open-fix');
+           $(this).addClass('open');
+      } else {
+      //MENU IS OPEN
+          $(this).removeClass('open-fix');
+          $(this).removeClass('open');
+      }
+
+      });
+    }
+  };
 }(jQuery));
