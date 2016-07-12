@@ -564,63 +564,6 @@ ul.rules-operations-add a {
   margin-left: 0;
 }
 
-#block-panels-mini-header {
-  display: flex;
-  width: 100%;
-  margin-bottom: 0px;
-
-  .block-content {
-    width: 100%;
-  }
-
-  .pane-page-site-name {
-    font-size: 1.5em ;
-    line-height: 1.5;
-    text-align: center;
-
-    @include breakpoint(295px) {
-      font-size: 1.8em;
-    }
-
-    @include breakpoint(400px) {
-      font-size: 2em;
-    }
-  }
-  .pane-page-slogan {
-    font-size: 1em;
-    line-height: 1.5;
-    text-align: center;
-
-    @include breakpoint(295px) {
-      font-size: 1.2em;
-    }
-
-    @include breakpoint(400px) {
-      font-size: 1.5em;
-    }
-  }
-
-  .middle-column {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-  }
-
-  .right-column,
-  .left-column {
-    flex: 0 auto;
-  }
-
-  .menu-name-user-menu {
-    ul li {
-      margin-left: 0;
-      white-space: nowrap;
-      text-transform: capitalize;
-      border-bottom: none;
-    }
-  }
-}
-
 .ui-dialog .ui-dialog-titlebar.ui-widget-header,
 .modal-header,
 #modalContent div.ctools-modal-content .modal-header {
@@ -673,28 +616,6 @@ ul.rules-operations-add a {
     width: 46%;
     padding: 1%;
     margin-left: 0;
-  }
-}
-
-#block-system-user-menu {
-  ul.menu {
-    float: right;
-
-    li {
-      float: left;
-      border: 0;
-    }
-  }
-}
-
-.middle-column .pane-system-user-menu {
-  ul {
-    text-align: center;
-  }
-  li {
-    margin-left: 0;
-    display: inline-block;
-    border-bottom: 0;
   }
 }
 
@@ -1136,20 +1057,6 @@ table[id*='field-notes-values'] > thead label {
   display: none;
 }
 
-td:not([class]) {
-  position: relative;
-
-  @include breakpoint(768px){
-    .button-remove {
-      position: absolute;
-      right: -50px;
-      top: 50%;
-      transform: rotate(-90deg);
-    }
-  }
-}
-
-
 /* Admin page styles */
 ul#views-display-menu-tabs {
   overflow: visible;
@@ -1464,10 +1371,6 @@ label[for="edit-pubdate"] {
       input { width: auto; }
     }
   }
-  .field-name-field-family-member-contacts {
-    .field-label label {  width: auto;  }
-    label { width: 100px; }
-  }
 }
 
 .page-field-collection-field-collection-mailing-address {
@@ -1486,16 +1389,6 @@ label[for="edit-pubdate"] {
   }
   .field-name-field-note {
     label { width: auto;  }
-  }
-}
-
-.pane-user-roles {
-  ul li {
-    margin-left: 0;
-    padding: 0; 
-  }
-  li.first {
-    text-transform: capitalize;
   }
 }
 
@@ -1532,21 +1425,6 @@ label[for="edit-pubdate"] {
   &.boxed {
     overflow: hidden;
   }
-  .field-name-field-featured-image {
-    img {
-      float: left;
-      margin-bottom: 1em;
-      max-width: 480px;
-      height: auto;
-      width: 100%;
-
-      @include breakpoint(481px) {
-        width: 50%;
-        margin-right: 1em;
-        margin-bottom: 0;
-      }
-    }
-  }
 }
 
 ul.links.inline li.book_add_child a {
@@ -1558,20 +1436,6 @@ ul.links.inline li.book_add_child a {
 }
 
 #media-browser-page .view-filters { float: none; }
-
-.form-item {
-  @include breakpoint(0px 767px) {
-    table, thead, th, tbody, tr, td {
-      display: block; 
-    }
-
-    td.field-multiple-drag { display: inline-block; }
-
-    input.field-add-more-submit { width: 100%; }
-
-    .field-name-field-status { float: none; }
-  }
-}
 
 html.js fieldset.collapsible div.fieldset-wrapper {
   overflow: visible !important;
