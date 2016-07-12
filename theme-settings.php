@@ -12,7 +12,6 @@ function full_rubik_form_system_theme_settings_alter(&$form, $form_state, $form_
   if (isset($form_id)) {
     return;
   }
-  dpm($form);
 
   $form['rubik'] = array(
     '#type' => 'fieldset',
@@ -22,31 +21,31 @@ function full_rubik_form_system_theme_settings_alter(&$form, $form_state, $form_
     '#type' => 'checkbox',
     '#title' => t('Show branding'),
     '#description' => t('Display the "branding" line at the top of the page with breadcrumbs and secondary menu.'),
-    '#default_value' => theme_get_setting('rubik_show_branding', 'rubik'),
+    '#default_value' => theme_get_setting('rubik_show_branding', 'full_rubik'),
   );
   $form['rubik']['rubik_inline_field_descriptions'] = array(
     '#type' => 'checkbox',
     '#title' => t('Display form field descriptions inline.'),
     '#description' => t("By default, each field's description is displayed in a pop-up, which is only visible when hovering over that field. Select this option to make all field descriptions visible at all times."),
-    '#default_value' => theme_get_setting('rubik_inline_field_descriptions', 'rubik'),
+    '#default_value' => theme_get_setting('rubik_inline_field_descriptions', 'full_rubik'),
   );
   $form['rubik']['rubik_disable_sticky_sidebar'] = array(
     '#type' => 'checkbox',
     '#title' => t('Disable sticky sidebar'),
     '#description' => t("By default, the sidebar will fix itself when scrolling down a form. If you have a lot of fields in the sidebar, consider disabling the sticky sidebar to view them all."),
-    '#default_value' => theme_get_setting('rubik_disable_sticky_sidebar', 'rubik'),
+    '#default_value' => theme_get_setting('rubik_disable_sticky_sidebar', 'full_rubik'),
   );
   $form['rubik']['rubik_disable_sidebar_in_form'] = array(
     '#type' => 'checkbox',
     '#title' => t('Disable sidebar in forms'),
     '#description' => t("By default, the sidebar is enabled for forms."),
-    '#default_value' => theme_get_setting('rubik_disable_sidebar_in_form', 'rubik'),
+    '#default_value' => theme_get_setting('rubik_disable_sidebar_in_form', 'full_rubik'),
   );
   $form['rubik']['rubik_sidebar_field_ui'] = array(
     '#type' => 'checkbox',
     '#title' => t('Display fields in the sidebar of the node edit form.'),
     '#description' => t("By default, each field is displayed in the main content area of the node edit form. This option allows you to move fields into the sidebar to improve user experience."),
-    '#default_value' => theme_get_setting('rubik_sidebar_field_ui', 'rubik'),
+    '#default_value' => theme_get_setting('rubik_sidebar_field_ui', 'full_rubik'),
     '#states' => array(
       'invisible' => array(
         ':input[name="rubik_disable_sidebar_in_form"]' => array('checked' => TRUE),
@@ -55,7 +54,7 @@ function full_rubik_form_system_theme_settings_alter(&$form, $form_state, $form_
   );
 
   // If the sidebar is disabled, we need to disable the sidebar field ui as well.
-  $rubik_disable_sidebar_in_form = theme_get_setting('rubik_disable_sidebar_in_form', 'rubik');
+  $rubik_disable_sidebar_in_form = theme_get_setting('rubik_disable_sidebar_in_form', 'full_rubik');
   if ($rubik_disable_sidebar_in_form == 1) {
     $form['rubik']['rubik_sidebar_field_ui']['#default_value'] = 0;
   }
