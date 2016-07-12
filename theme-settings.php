@@ -12,6 +12,7 @@ function full_rubik_form_system_theme_settings_alter(&$form, $form_state, $form_
   if (isset($form_id)) {
     return;
   }
+  dpm($form_id);
 
   $form['rubik'] = array(
     '#type' => 'fieldset',
