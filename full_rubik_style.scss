@@ -1212,6 +1212,11 @@ form .tabs {
   width: 100%;
 }
 
+#user-login-panel .col-md-6 > .panel-panel-inner {
+  max-width: 575px;
+  margin: auto;
+}
+
 #user-login {
   .form-item {
     display: flex;
@@ -1228,8 +1233,7 @@ form .tabs {
 }
 
 #user-login, #user-pass {
-  .g-recaptcha > div > div {
-    display: table;
+  .g-recaptcha > div {
     margin: 0 auto;
   }
 }
