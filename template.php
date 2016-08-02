@@ -350,3 +350,11 @@ function full_rubik_preprocess_html(&$vars) {
   );
   drupal_add_html_head($viewport, 'viewport');
 }
+
+/**
+* Increase the length of the slogan.
+* Implements hook_form_FORM_ID_alter.
+*/
+function sp123_rubik_form_system_site_information_settings_alter(&$form, &$form_state, $form_id) {
+  $form['site_information']['site_slogan']['#maxlength'] = 255;
+}
