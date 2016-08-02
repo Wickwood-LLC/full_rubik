@@ -13,10 +13,12 @@
 </header>
 <?php if (theme_get_setting('rubik_show_branding')): ?>
 <div id='branding'><div class='limiter clearfix'>
-  <?php if ((arg(0) == 'user' && arg(1) == 'login') || (arg(0) == 'user' && arg(1) == 'password')): ?>
-    <div class='breadcrumb clearfix'></div>
-  <?php else: ?>
-    <div class='breadcrumb clearfix'><?php print $breadcrumb ?></div>
+  <?php if (!empty($breadcrumb)): ?>
+    <?php if ((arg(0) == 'user' && arg(1) == 'login') || (arg(0) == 'user' && arg(1) == 'password')): ?>
+      <div class='breadcrumb clearfix'></div>
+    <?php else: ?>
+      <div class='breadcrumb clearfix'><?php print $breadcrumb ?></div>
+    <?php endif; ?>
   <?php endif; ?>
   <?php if (!$overlay && isset($secondary_menu)) : ?>
     <?php print theme('links', array('links' => $secondary_menu, 'attributes' => array('class' => 'links secondary-menu'))) ?>
