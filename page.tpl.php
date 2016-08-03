@@ -12,7 +12,6 @@
   <?php print render($page['navbar']); ?>
 </header>
 <?php if (theme_get_setting('rubik_show_branding')): ?>
-<?php if (!empty($breadcrumb)): ?>
   <div id='branding'><div class='limiter clearfix'>  
     <?php if ((arg(0) == 'user' && arg(1) == 'login') || (arg(0) == 'user' && arg(1) == 'password')): ?>
       <div class='breadcrumb clearfix'></div>
@@ -24,7 +23,6 @@
       <?php print theme('links', array('links' => $secondary_menu, 'attributes' => array('class' => 'links secondary-menu'))) ?>
     <?php endif; ?>
   </div></div>
-<?php endif; ?>
 <?php endif; ?>
 
 <div id='page-title'><div class='limiter clearfix'>
@@ -62,11 +60,12 @@
 </div></div>
 
 <div id='footer' class='clearfix'>
-  <!-- <?php if ($feed_icons): ?>
+  <?php if ($feed_icons): ?>
     <div class='feed-icons clearfix'>
       <label><?php print t('Feeds') ?></label>
       <?php print $feed_icons ?>
     </div>
-  <?php endif; ?> -->
-  <?php print render($page['footer']); ?>
+  <?php endif; ?>
 </div>
+
+<?php print render($page['footer']); ?>
