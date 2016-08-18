@@ -779,7 +779,7 @@ ul.field-collection-view-links {
   float: none; }
 
 .field-type-datetime.field-widget-date-popup .form-item {
-  display: inline-block;
+  display: block;
   overflow: hidden; }
   .field-type-datetime.field-widget-date-popup .form-item label, .field-type-datetime.field-widget-date-popup .form-item input {
     display: inline-block; }
