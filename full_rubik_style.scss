@@ -983,7 +983,6 @@ ul.field-collection-view-links {
 }
 
 .field-type-datetime.field-widget-date-popup {
-
   .form-item {
     display: block;
     overflow: hidden;
@@ -1001,6 +1000,10 @@ ul.field-collection-view-links {
     .description {
       display: none;
     }
+  }
+
+  .form-item.form-type-textfield {
+    display: inline-block;
   }
 }
 

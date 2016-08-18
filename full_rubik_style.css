@@ -790,6 +790,8 @@ ul.field-collection-view-links {
     text-align: center; }
   .field-type-datetime.field-widget-date-popup .form-item .description {
     display: none; }
+.field-type-datetime.field-widget-date-popup .form-item.form-type-textfield {
+  display: inline-block; }
 
 input.field-add-more-submit {
   text-transform: capitalize;
