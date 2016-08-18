@@ -1271,7 +1271,9 @@ label[for="edit-pubdate"] {
   }
 }
 
-#node-edit {
+#node-edit,
+.page-node-edit,
+.page-node-add {
   #edit-entity-recur {
     .form-item-entity-recur-rules-frequency,
     .form-item-entity-recur-rules-period {
