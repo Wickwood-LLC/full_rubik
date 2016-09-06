@@ -1237,4 +1237,7 @@ html.js fieldset.collapsible div.fieldset-wrapper {
   right: -25px;
   top: 35%; }
 
+#media-browser-tabset #branding {
+  height: 30px; }
+
 /*# sourceMappingURL=full_rubik_style.css.map */
