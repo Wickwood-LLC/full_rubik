@@ -327,6 +327,11 @@ function full_rubik_preprocess_secondary_exposed_elements(&$vars) {
 
     $value = $element[$info['value']];
     unset($value['#title']);
+    // Numberic input filter will be having extra 'min' and 'max' subfields along with 'value'
+    // We don't need title for value field here.
+    if (isset($value['value']) && isset($value['min']) && isset($value['max'])) {
+      unset($value['value']['#title']);
+    }
     $widget->widget = drupal_render($value);
     $vars['widget_parts'][] = $info['value'];
     $vars['widget_values'][] = $info['value'];
