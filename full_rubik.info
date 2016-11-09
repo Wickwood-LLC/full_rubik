@@ -3,7 +3,7 @@ description = Rubik subtheme for use in all parts of the website.
 base theme = rubik
 core = 7.x
 
-stylesheets[screen][] = full_rubik_style.css
+stylesheets[all][] = full_rubik_style.css
 scripts[] = full_rubik.js
 
 regions[header] = Header
