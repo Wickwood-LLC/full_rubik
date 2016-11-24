@@ -4857,12 +4857,6 @@
 		"oAP": "\/page.tpl.php",
 		"oF": 0
 		},
-	"\/template.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/template.php",
-		"oF": 0
-		},
 	"\/templates\/views-exposed-form.tpl.php": {
 		"ft": 8192,
 		"oA": 0,
