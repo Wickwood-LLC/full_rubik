@@ -3877,4 +3877,7 @@ input.form-submit {
       color: white; }
   #block-superfish-1 #superfish-1-accordion li a {
     color: #00728e; }
+
+#overlay-tabs {
+  display: none !important; }
 /*# sourceMappingURL=full_rubik_style.css.map */
