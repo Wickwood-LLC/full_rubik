@@ -24,6 +24,11 @@
 
 <?php print render($disable_overlay); ?>
 <div id="overlay" <?php print $attributes; ?>>
+  <div id="overlay-titlebar" class="clearfix">
+    <div id="overlay-close-wrapper">
+      <a id="overlay-close" href="#" class="overlay-close"><span class="element-invisible"><?php print t('Close overlay'); ?></span></a>
+    </div>
+  </div>
   <div id="overlay-content"<?php print $content_attributes; ?>>
     <?php print $page; ?>
   </div>
