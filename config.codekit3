@@ -4863,6 +4863,12 @@
 		"oAP": "\/template.php",
 		"oF": 0
 		},
+	"\/templates\/overlay.tpl.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/overlay.tpl.php",
+		"oF": 0
+		},
 	"\/templates\/views-exposed-form.tpl.php": {
 		"ft": 8192,
 		"oA": 0,
