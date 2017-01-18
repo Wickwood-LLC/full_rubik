@@ -405,7 +405,8 @@ ul.secondary-tabs {
     position: relative;
     top: -20px; }
   ul.secondary-tabs li.active a {
-    top: 0; }
+    top: 0;
+    height: 40px; }
   ul.secondary-tabs:hover {
     height: auto;
     overflow: visible; }
