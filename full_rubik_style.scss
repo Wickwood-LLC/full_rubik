@@ -931,8 +931,9 @@ div.panel-pane div.node.boxed {
   width: inherit; // for IE
   z-index: 100;
 }
-#edit-actions {
+.form-actions#edit-actions {
   text-align: center;
+  float: none;
 }
 .pane-profile2-form-buttons {
   width: 100%;
