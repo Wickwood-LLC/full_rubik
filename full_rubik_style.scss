@@ -111,11 +111,16 @@ body.page-admin .region-footer {
   }
 }
 .help-page, div.comment, div.node {
-  background: none;
+  background: none !important;
   border: 0px;
 }
 body.tao {
   color: black;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .field {
