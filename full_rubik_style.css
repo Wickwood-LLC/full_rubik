@@ -99,7 +99,7 @@ body.page-admin .region-footer table {
   border: 0px; }
 
 .help-page, div.comment, div.node {
-  background: none !important;
+  background: none;
   border: 0px; }
 
 body.tao {
