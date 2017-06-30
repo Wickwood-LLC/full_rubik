@@ -61,13 +61,13 @@
             $("#block-superfish-1 #logo").remove();
           }
 
-          if (!($("#block-superfish-1 .pane-page-site-name").length) && $(window).width() >= 850) {
+          if (!($("#block-superfish-1 .pane-page-site-name").length) && $(window).width() >= 870) {
             $(".pane-page-site-name").clone().prependTo('#block-superfish-1');
             $("#block-superfish-1 .pane-page-site-name").delay(500).queue(function() {
               $("#block-superfish-1 .pane-page-site-name").addClass('animate').dequeue();
             });
           }
-          else if ($(window).width() < 850) {
+          else if ($(window).width() < 870) {
             $("#block-superfish-1 .pane-page-site-name").remove();
           }
 
@@ -145,13 +145,13 @@
             $("#block-superfish-1 #logo").remove();
           }
 
-          if (!($("#block-superfish-1 .pane-page-site-name").length) && $(window).width() >= 850) {
+          if (!($("#block-superfish-1 .pane-page-site-name").length) && $(window).width() >= 870) {
             $(".pane-page-site-name").clone().prependTo('#block-superfish-1');
             $("#block-superfish-1 .pane-page-site-name").delay(500).queue(function() {
               $("#block-superfish-1 .pane-page-site-name").addClass('animate').dequeue();
             });
           }
-          else if ($(window).width() < 850) {
+          else if ($(window).width() < 870) {
             $("#block-superfish-1 .pane-page-site-name").remove();
           }
 
@@ -243,7 +243,7 @@
               $("#block-superfish-1 #logo").addClass('animate').dequeue();
             });
           }
-          if (!($("#block-superfish-1 .pane-page-site-name").length) && $(window).width() > 850) {
+          if (!($("#block-superfish-1 .pane-page-site-name").length) && $(window).width() > 870) {
             $(".pane-page-site-name").clone().prependTo('#block-superfish-1');
             $("#block-superfish-1 .pane-page-site-name").delay(500).queue(function() {
               $("#block-superfish-1 .pane-page-site-name").addClass('animate').dequeue();
