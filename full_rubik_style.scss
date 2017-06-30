@@ -3605,10 +3605,11 @@ input.form-submit {
       display: inline-block;
       width: 100%;
       padding: 0 15px;
+      vertical-align: middle;
 
       @include breakpoint (718px) {
         width: auto;
-        padding: 0;
+        padding: 0 0 0.5em 0;
       }
     }
   }
@@ -3751,6 +3752,10 @@ input.form-submit {
 }
 
 #block-superfish-1 {
+  #logo {
+    display: inline-block;
+    vertical-align: middle;
+  }
   #logo img {
     width: 0px;
     transition: all 300ms cubic-bezier(0.165,0.840,0.440,1.000);
@@ -3769,6 +3774,7 @@ input.form-submit {
     text-indent: 300px;
     white-space: nowrap;
     box-sizing: content-box;
+    vertical-align: middle;
 
     &.animate {
       display: inline-block;
