@@ -4000,4 +4000,10 @@ input.form-submit {
 
 .pane-menu-menu-footer-links .menu li {
   border: 0; }
+
+form#user-login, form#user-pass {
+  padding: 2em 1em 1em 1em;
+  border-radius: 10px;
+  border: 2px solid #77bbcc;
+  margin-bottom: 1em; }
 /*# sourceMappingURL=full_rubik_style.css.map */
