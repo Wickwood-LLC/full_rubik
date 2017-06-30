@@ -3997,4 +3997,7 @@ input.form-submit {
   @media (min-width: 1084px) {
     #overlay {
       margin-top: 29px !important; } }
+
+.pane-menu-menu-footer-links li {
+  border: 0; }
 /*# sourceMappingURL=full_rubik_style.css.map */
