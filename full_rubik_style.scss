@@ -3601,7 +3601,7 @@ input.form-submit {
       padding-bottom: 0;
     }
 
-    .block__content {
+    .block-content {
       display: inline-block;
       width: 100%;
       padding: 0 15px;
@@ -3613,7 +3613,7 @@ input.form-submit {
     }
   }
 
-  .block__content,
+  .block-content,
   &.sticky-menu .block-content {
     display: inline-block;
     width: 100%;
@@ -3760,7 +3760,7 @@ input.form-submit {
     margin-right: 0.5em;
   }
 
-  #site-title {
+  .pane-page-site-name {
     display: none;
     margin: 0;
     vertical-align: top;
