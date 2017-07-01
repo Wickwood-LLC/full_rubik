@@ -4006,4 +4006,13 @@ form#user-login, form#user-pass {
   border-radius: 10px;
   border: 2px solid #77bbcc;
   margin-bottom: 1em; }
+
+.pane-1.copyright {
+  text-align: center; }
+
+.pane-menu-menu-footer-links {
+  text-align: center; }
+  .pane-menu-menu-footer-links .menu li {
+    display: inline-block;
+    margin-left: 0; }
 /*# sourceMappingURL=full_rubik_style.css.map */

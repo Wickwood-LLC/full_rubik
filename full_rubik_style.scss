@@ -3819,3 +3819,15 @@ form#user-login, form#user-pass {
   border: 2px solid #77bbcc;
   margin-bottom: 1em;
 }
+
+.pane-1.copyright {
+  text-align: center;
+}
+.pane-menu-menu-footer-links {
+  text-align: center;
+
+  .menu li {
+    display: inline-block;
+    margin-left: 0;
+  }
+}
