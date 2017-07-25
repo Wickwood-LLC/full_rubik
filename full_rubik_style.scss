@@ -512,13 +512,13 @@ ul.secondary-tabs {
   overflow: hidden;
 
   li {
-    height: 0;
+    height: 0 !important;
   }
 
   li a {
     display: block;
     float: none;
-    height: 0px;
+    height: 0px !important;
     position: relative;
     top: -20px;
   }
@@ -533,11 +533,11 @@ ul.secondary-tabs {
     overflow: visible;
 
     li {
-      height: auto;
+      height: auto !important;
     }
 
     li a {
-      height: auto;
+      height: auto !important;
       position: relative;
       top: 0px;
     }

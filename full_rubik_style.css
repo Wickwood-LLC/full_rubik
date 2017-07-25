@@ -405,11 +405,11 @@ ul.secondary-tabs {
   height: 20px;
   overflow: hidden; }
   ul.secondary-tabs li {
-    height: 0; }
+    height: 0 !important; }
   ul.secondary-tabs li a {
     display: block;
     float: none;
-    height: 0px;
+    height: 0px !important;
     position: relative;
     top: -20px; }
   ul.secondary-tabs li.active a {
@@ -419,9 +419,9 @@ ul.secondary-tabs {
     height: auto;
     overflow: visible; }
     ul.secondary-tabs:hover li {
-      height: auto; }
+      height: auto !important; }
     ul.secondary-tabs:hover li a {
-      height: auto;
+      height: auto !important;
       position: relative;
       top: 0px; }
 
