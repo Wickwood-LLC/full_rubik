@@ -404,6 +404,8 @@ ul.secondary-tabs.links:hover li, ul.secondary-tabs.links:hover li a {
 ul.secondary-tabs {
   height: 20px;
   overflow: hidden; }
+  ul.secondary-tabs li {
+    height: 0; }
   ul.secondary-tabs li a {
     display: block;
     float: none;
@@ -416,6 +418,8 @@ ul.secondary-tabs {
   ul.secondary-tabs:hover {
     height: auto;
     overflow: visible; }
+    ul.secondary-tabs:hover li {
+      height: auto; }
     ul.secondary-tabs:hover li a {
       height: auto;
       position: relative;
