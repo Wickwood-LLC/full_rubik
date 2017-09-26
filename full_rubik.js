@@ -24,7 +24,7 @@
       $menu = $('#block-superfish-1');
       topSpacing = $('#admin-menu').height();
 
-      $(window).off("load resize");
+      $(window).off("load resize scroll");
 
       $(window).on("load resize", function() {
         menuWidth = $menu.parent().width();          // gets the width of the container
