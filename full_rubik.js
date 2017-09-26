@@ -197,6 +197,7 @@
       });
 
       $(window).scroll(function(){ // scroll event 
+        $menu.addClass('sticky-menu');
         windowTop = $(window).scrollTop();    // tells how far our screen is currently from the top of the page
         currentPosition = stickyTop - windowTop;    // tells how far our target element is from where our screen is currently
 
