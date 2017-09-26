@@ -259,7 +259,7 @@
             "margin-bottom": menuHeight + 18
           });
         }
-        else {
+        else if (currentPosition >= 0) {
           $menu.css({
             width: menuWidth,
           });
