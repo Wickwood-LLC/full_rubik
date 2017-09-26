@@ -31,7 +31,9 @@
         $menu.css({
           width: menuWidth,
         });
-        $menu.removeClass('sticky-menu');
+        if ($('sticky-menu')) {
+          $menu.removeClass('sticky-menu');
+        }
 
         $('#block-panels-mini-header').css({
           "margin-bottom": 0
