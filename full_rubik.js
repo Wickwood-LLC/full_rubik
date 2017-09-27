@@ -26,7 +26,10 @@
 
       $(window).off("load resize scroll");
 
-      $(window).on("load resize", function() {
+      $(document).ready(sticky);
+      $(window).on("resize", sticky);
+
+      function sticky() {
         menuWidth = $menu.parent().width();          // gets the width of the container
         $menu.css({
           width: menuWidth,
@@ -110,7 +113,7 @@
         }
 
         // console.log("Top spacing is " + topSpacing);
-      });
+      }
       
       $('#admin-menu').on("mresize", function(){
         menuWidth = $menu.parent().width();          // gets the width of the container
