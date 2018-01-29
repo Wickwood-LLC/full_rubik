@@ -97,8 +97,8 @@
         }
 
         if ($('#admin-menu').length) {
-          windowTop = $(window).scrollTop() + topSpacing;    // tells how far our screen is currently from the top of the page
-          currentPosition = stickyTop - windowTop;    // tells how far our target element is from where our screen is currently
+          windowTop = $(window).scrollTop();    // tells how far our screen is currently from the top of the page
+          currentPosition = stickyTop - windowTop + topSpacing;    // tells how far our target element is from where our screen is currently
 
           if (currentPosition < 0) {   // if target element goes above the screen
             $menu.css({
@@ -181,8 +181,8 @@
         }
 
         if ($('#admin-menu').length) {
-          windowTop = $(window).scrollTop() + topSpacing;    // tells how far our screen is currently from the top of the page
-          currentPosition = stickyTop - windowTop;    // tells how far our target element is from where our screen is currently
+          windowTop = $(window).scrollTop();    // tells how far our screen is currently from the top of the page
+          currentPosition = stickyTop - windowTop + topSpacing;    // tells how far our target element is from where our screen is currently
 
           if (currentPosition < 0) {   // if target element goes above the screen
             $menu.css({
@@ -208,8 +208,8 @@
         // console.log('Current position: ' + currentPosition);
 
         if ($('#admin-menu').length) {
-          windowTop = $(window).scrollTop() + topSpacing;    // tells how far our screen is currently from the top of the page
-          currentPosition = stickyTop - windowTop;    // tells how far our target element is from where our screen is currently
+          windowTop = $(window).scrollTop();    // tells how far our screen is currently from the top of the page
+          currentPosition = stickyTop - windowTop + topSpacing;    // tells how far our target element is from where our screen is currently
           console.log('[admin] Distance from top of page: ' + stickyTop);
           console.log('[admin] Current position: ' + currentPosition);
 
