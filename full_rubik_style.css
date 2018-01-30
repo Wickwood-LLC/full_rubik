@@ -4051,28 +4051,4 @@ form#user-login, form#user-pass {
   .pane-menu-menu-footer-links .menu li {
     display: inline-block;
     margin-left: 0; }
-
-form[action="/contact-bwma-org"] .form-item [class*="first-name"],
-form[action="/contact-bwma-org"] .form-item [class*="last-name"],
-form[action="/contact-bwma-org"] .form-item [class*="email-address"] {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  form[action="/contact-bwma-org"] .form-item [class*="first-name"] label,
-  form[action="/contact-bwma-org"] .form-item [class*="last-name"] label,
-  form[action="/contact-bwma-org"] .form-item [class*="email-address"] label {
-    width: 110px; }
-  form[action="/contact-bwma-org"] .form-item [class*="first-name"] input,
-  form[action="/contact-bwma-org"] .form-item [class*="last-name"] input,
-  form[action="/contact-bwma-org"] .form-item [class*="email-address"] input {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 200px;
-            flex: 1 1 200px; }
 /*# sourceMappingURL=full_rubik_style.css.map */
