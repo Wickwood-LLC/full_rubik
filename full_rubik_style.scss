@@ -3848,3 +3848,22 @@ form#user-login, form#user-pass {
     margin-left: 0;
   }
 }
+
+form[action="/contact-bwma-org"] {
+  .form-item {
+    & [class*="first-name"],
+    & [class*="last-name"],
+    & [class*="email-address"] {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+
+      label {
+        width: 110px;
+      }
+      input {
+        flex: 1 1 200px;
+      }
+    }
+  }
+}
