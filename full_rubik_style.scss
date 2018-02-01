@@ -1085,6 +1085,9 @@ table[id*='field-notes-values'] > thead label {
 }
 
 /* Admin page styles */
+#views-ui-edit-form .views-display-top ul.secondary.tabs > li {
+  margin: 0 10px 5px 0;
+}
 ul#views-display-menu-tabs {
   overflow: visible;
 
@@ -3570,6 +3573,10 @@ input.form-submit {
   background-color: #77BBCD;
   border-color: #73b5c5;
   color: white;
+}
+
+.ctools-dropbutton input.form-submit {
+  color: black;
 }
 
 .views-exposed-form .reset-link-button {

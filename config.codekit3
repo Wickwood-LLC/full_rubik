@@ -7,7 +7,7 @@
 		"uuidString": "817B2770-20ED-4992-8DB7-27DB169B087B"
 		}
 	],
-"creatorBuild": "26148",
+"creatorBuild": "26261",
 "files": {
 	"\/.gitignore": {
 		"cB": 0,
@@ -5164,14 +5164,14 @@
 		"tS": 0
 		},
 	"\/full_rubik_style.css": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/full_rubik_style-min.css",
 		"oF": 0,
-		"oS": 0
+		"oS": 3
 		},
 	"\/full_rubik_style.css.map": {
 		"cB": 0,
@@ -5181,12 +5181,12 @@
 		"oF": 0
 		},
 	"\/full_rubik_style.scss": {
-		"aP": 1,
+		"aP": 0,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 1,
+		"ma": 0,
 		"oA": 0,
 		"oAP": "\/full_rubik_style.css",
 		"oF": 0,
@@ -6007,6 +6007,10 @@
 		"id-match": {
 			"active": 0,
 			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"implicit-arrow-linebreak": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"indent": {
 			"active": 0,
