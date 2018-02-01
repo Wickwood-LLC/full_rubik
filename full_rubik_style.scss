@@ -1085,8 +1085,8 @@ table[id*='field-notes-values'] > thead label {
 }
 
 /* Admin page styles */
-#views-ui-edit-form .views-display-top ul.secondary.tabs > li {
-  margin: 0 10px 5px 0;
+#views-ui-edit-form  ul#views-display-menu-tabs > li {
+  margin-bottom: 5px;
 }
 ul#views-display-menu-tabs {
   overflow: visible;
