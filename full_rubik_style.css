@@ -260,7 +260,9 @@ div#toolbar div.toolbar-shortcuts ul {
   color: red;
   clear: both;
   border: 1px solid #CCCCCC;
-  padding: 1em; }
+  padding: 1em;
+  display: inline-block;
+  width: 66%; }
 
 .vbo-views-form .fieldset-content input {
   margin-right: 0.5em; }
