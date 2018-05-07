@@ -7,7 +7,7 @@
 		"uuidString": "817B2770-20ED-4992-8DB7-27DB169B087B"
 		}
 	],
-"creatorBuild": "26330",
+"creatorBuild": "26680",
 "files": {
 	"\/.gitignore": {
 		"cB": 0,
@@ -5436,7 +5436,8 @@
 	"creationDate": 500382347,
 	"displayValue": "full_rubik",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "meme-doge"
+	"iconImageName": "meme-doge",
+	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -7239,6 +7240,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {

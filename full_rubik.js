@@ -24,7 +24,7 @@
       $menu = $('#block-superfish-1');
       topSpacing = $('#admin-menu').height();
 
-      $(window).off("load resize scroll");
+      // $(window).off("load resize scroll");
 
       $(document).ready(sticky);
       $(window).on("resize", sticky);
