@@ -3708,6 +3708,6 @@ form#user-login, form#user-pass {
     display: inline-block;
     margin-left: 0; }
 
-.text-format-wrapper .form-item {
+.text-format-wrapper .form-item.form-type-textarea {
   border: 0;
   padding: 0; }
