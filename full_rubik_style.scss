@@ -127,6 +127,14 @@ img {
   margin-right: 0;
 }
 
+#console {
+  .messages {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    min-height: 40px;
+  }
+}
+
 .field {
   &.field-name-field-phone-number,
   &.field-name-field-deferred-fee-amount,

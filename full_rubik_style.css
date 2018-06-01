@@ -112,6 +112,11 @@ img {
   margin-left: 0;
   margin-right: 0; }
 
+#console .messages {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  min-height: 40px; }
+
 .field.field-name-field-phone-number, .field.field-name-field-deferred-fee-amount, .field.pane-user-field-ss-or-ein, .field.field-name-field-ss-or-ein {
   display: inline-block; }
 
