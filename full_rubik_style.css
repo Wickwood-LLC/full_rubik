@@ -106,7 +106,9 @@ body.tao {
   color: black; }
 
 img {
-  text-indent: -9999px; }
+  text-indent: -9999px;
+  max-width: 100%;
+  height: auto; }
 
 .row {
   margin-left: 0;
