@@ -627,7 +627,7 @@ ul.rules-operations-add a {
 .ui-dialog .ui-dialog-titlebar.ui-widget-header,
 .modal-header,
 #modalContent div.ctools-modal-content .modal-header {
-  background: url(images/bleeds.png) 0px -30px repeat-x;
+  background: #666666;
   color: #ccc;
   font-size: 11px;
   height: 30px;
