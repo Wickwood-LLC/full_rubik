@@ -1047,6 +1047,7 @@ div.panel-pane div.node.boxed .ctools-toggle {
 }
 
 .form-item {
+  box-sizing: border-box;
   width: 100%;
 }
 
@@ -2220,19 +2221,6 @@ table.views-table .pane-user-field-identification {
 
 .panelizer-view-mode.node-embedded-to-profile > .panel-display {
   display: none;
-}
-
-.form-item {
-  width: 100%;
-}
-
-.form-item label {
-  display: inline-block;
-  font-size: 13px;
-}
-
-.form-item input[type="text"] {
-  box-sizing: border-box;
 }
 
 .form-item.form-type-date-combo {
@@ -5085,5 +5073,21 @@ form#user-pass {
 .text-format-wrapper .form-item.form-type-textarea {
   border: 0;
   padding: 0;
+}
+
+#linkit-cancel {
+  cursor: pointer;
+  padding: 3px 10px;
+  color: #333;
+  font-size: 13px;
+  text-align: center;
+  font-weight: normal;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ddd #ddd #ccc;
+  border-radius: 3px;
+  background: #fff url(../images/buttons.png) -1px 50% no-repeat;
+  display: inline-block;
+  margin-left: 0.5em;
 }
 /*# sourceMappingURL=full_rubik_style.css.map */
