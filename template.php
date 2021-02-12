@@ -84,7 +84,10 @@ function full_rubik_breadcrumb($vars) {
     $output .= "<span class='breadcrumb-link breadcrumb-depth-{$depth}'>{$link}</span>";
     $depth++;
   }
-  return $output;
+
+  if (($depth > 2)) { // Only show breadcrumbs if we have more than 2 links
+    return $output;
+  }
 }
 
 /**
